@@ -1,0 +1,27 @@
+namespace CSharpExam_uppgift_Task_3_the_actual_one_
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] names = { "Alice", "John", "Mia" };
+
+            int[] numbers = { 12, 45, 78, 3, 99, 21, 8 };
+            
+            foreach (string name in names)
+            {
+                Console.WriteLine($"Hello: {name}!");
+            }
+            //Very simple "Array.Sort" sorts out the numbers by order creating a much more simpler and much more easier to sort out the numbers
+                Array.Sort(numbers);
+
+                numbers = numbers.Take(numbers.Length - 1).ToArray();
+
+                foreach (int number in numbers)
+                {
+                    Console.Write(number + " ");
+                }
+                Console.ReadKey();
+            }
+        }
+    }
