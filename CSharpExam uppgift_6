@@ -1,0 +1,21 @@
+namespace CSharpExam_uppgift_6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Dictionary<string, string> items = new Dictionary<string, string>();
+
+            bool running = true;
+
+            while (running)
+            {
+                Console.WriteLine("Menu:");
+                Console.WriteLine("a. Name");
+                Console.WriteLine("b. Publisher");
+                Console.WriteLine("c. Year");
+                Console.WriteLine("d. Genre");
+                Console.Write("Choose an option: ");
+            }
+    }
+}
