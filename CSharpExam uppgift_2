@@ -1,0 +1,30 @@
+namespace CSharpExam_uppgift_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Here im just simply asking the user what number to pick from and then tell them whether or not if the number is positive or negative
+            Console.WriteLine("Pick a number");
+            double num = Convert.ToDouble(Console.ReadLine());
+
+            if (num >= 1 && num <= 10000000000)
+            {
+                Console.WriteLine("The number you picked is positive");
+            }
+
+
+            else if (num >= -1 || num >= -10000000000)
+            {
+                Console.WriteLine("The number you picked is negative");
+            }
+
+            else if (num >= 0)
+            {
+                Console.WriteLine("The number is zero");
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
