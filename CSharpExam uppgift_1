@@ -1,0 +1,27 @@
+namespace CSharpexam_uppgift_1_real
+{
+
+   using System;
+
+   class Program
+   {
+         static void Main(string[] args)
+         {
+            string str = "123";
+
+            int intValue = int.Parse(str);
+            Console.WriteLine($"String to int: {intValue}");
+
+            double doubleValue = intValue;
+            Console.WriteLine($"Int to double: {doubleValue}");
+
+            float floatValue = (float)doubleValue;
+            Console.WriteLine($"Double to float: {floatValue}");
+
+            string resultStr = floatValue.ToString();
+            Console.WriteLine($"Float back to string: {resultStr}");
+
+            Console.ReadKey();
+            }
+        }
+    }
